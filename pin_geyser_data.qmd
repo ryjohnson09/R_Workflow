@@ -1,0 +1,30 @@
+---
+title: "Pin Data"
+format: html
+editor: visual
+---
+
+## Load Packages
+
+```{r}
+library(pins)
+```
+
+## Filter and Save Data
+
+```{r}
+# Extract second column from Faithful dataset
+x <- faithful[, 2]
+```
+
+## Pin to Posit Connect
+
+```{r}
+# Connect to Posit Connect
+board <- pins::board_rsconnect(
+  server = "https://colorado.posit.co/rsc",
+  key = Sys.getenv("CONNECT_API_KEY"))
+
+# Write Pin
+pins::pin_write(board, x, name = "Faithful_Geyser_Data")
+```

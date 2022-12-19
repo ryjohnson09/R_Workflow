@@ -1,0 +1,13 @@
+name: bin_breaks_api
+title: bin_breaks_API
+username: ryan
+account: ryan
+server: colorado.posit.co
+hostUrl: https://colorado.posit.co/rsc/__api__
+appId: 14367
+bundleId: 67356
+url: https://colorado.posit.co/rsc/bin_breaks_API/
+when: 1671243364.55436
+lastSyncTime: 1671243364.55459
+asMultiple: FALSE
+asStatic: FALSE
